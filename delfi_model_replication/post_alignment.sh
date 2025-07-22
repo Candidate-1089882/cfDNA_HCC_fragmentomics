@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=8          # Number of CPU cores per task
 #SBATCH --mem=60G                   # Total memory per node
 #SBATCH --ntasks=1                # Number of tasks: 59 BAM files
-#SBATCH --array=1-148             # Job array with task indices (59 or 119 or 2 or 148)
+#SBATCH --array=1-59             # Job array with task indices (59 or 119 or 2 or 148)
 #SBATCH --mail-type=ALL            # Notifications for all job events
 #SBATCH --job-name=Post_alignment  # Job name
 #SBATCH -o /well/ludwig/users/cnr137/CD_cohort/logs/post_alignment/post_alignment_%A_%a.out  # Standard output file with job ID and array task ID
